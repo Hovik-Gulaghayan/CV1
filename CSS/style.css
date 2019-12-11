@@ -1,0 +1,118 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body,main{
+	height: 100%;
+	margin: auto;
+}
+
+body{
+	vertical-align: middle;
+	display: table;
+	background-image: url(../Img/vladimirs-wood-texture-plank-grain-background-wooden-desk-table-or-floor-old-striped-timber-board_a-G-12349846-14258385.jpg);
+}
+
+main{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+caption{
+    font-size:30px;
+    font-family: cursive;
+    color:#1E90FF;
+    text-shadow: 2px 2px #1E90FF;
+    padding:1%;
+}
+
+table tbody:first-of-type tr .th_num::before{
+	counter-increment: section;
+	content: " " counter(section) ".";
+	text-align: right;
+	float:left;
+}
+
+table{
+	counter-reset: section;
+	width:100%;
+	border-collapse: collapse;
+	background: #B0E0E6;
+	white-space: nowrap;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+th,td{
+	border:1px solid #4682B4;
+	padding:2px 5px 5px 10px;	
+}
+
+th{
+	text-align: right;
+}
+
+.td_r{
+	color:black;
+	text-align: right;
+}
+
+td{
+	color:#00008B;
+	width:135px;
+}
+
+a,abbr{
+	text-decoration: none;
+}
+
+#th_l{
+	width:180px;
+}
+
+input{
+	background: #B0E0E6;
+	outline: 0;
+	border: none;
+	color: #00008B;
+}
+
+img{
+	width:75%;
+	margin-left:11%;
+	margin-top:4%;
+}
+
+.tbody_2 > tr > th:nth-child(1) {
+  text-align: center;
+  font-weight: normal;
+}
+
+.tbody_2 > tr > td:nth-child(2) {
+  text-align: center;
+  font-weight: normal;
+}
+
+.tbody_2 > tr > td:nth-child(3) {
+  text-align: center;
+  font-weight: normal;
+}
+
+.tbody_2 > tr > td:nth-child(4) {
+  text-align: center;
+  font-weight: normal;
+}
+
+.tbody_2 > tr > td:nth-child(5) {
+  text-align: center;
+  font-weight: normal;
+}
+.accept {
+	visibility: hidden;
+}
